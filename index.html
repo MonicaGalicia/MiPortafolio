@@ -4,185 +4,236 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/lightbox.css">
+		<link rel="stylesheet" href="css/ihover.css">
 		<link rel="stylesheet" href="css/materialize.min.css">
-		<link rel="stylesheet" href="css/ihover.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href="css/pace-theme-loading-bar.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<title>Portafolio</title>
 	</head>
 	<body> 
 		<div class="container-fluid">
 			<header>
-				<div class="section secUno">
-	                <div class="navbar-fixed">	  
-						<nav class="N/A transparent">
-						    <div class="nav-wrapper">
-	      						<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-	      						<ul class=" right hide-on-med-and-down">
-	        						<li><a href="">Inicio</a></li>
-	        						<li><a href="">Acerca de mi</a></li>
-	        						<li><i class="large material-icons">code</i></li>
-	        						<li><a href="">Habilidades</a></li>
-	        						<li><a href="">Contacto</a></li>
-	      						</ul>
-	      						<ul class="side-nav" id="mobile-demo">
-	        						<li><a href="">Inicio</a></li>
-	        						<li><a href="">Acerca de mi</a></li>
-	        						<li><a href="">Habilidades</a></li>
-	        						<li><a href="">Contacto</a></li>
-	      						</ul>
-	    					</div>
-	    				</nav>
-	    			</div>
-	    			<div class="row">
+				<div id="inicio" class="secUno">
+					<nav id="main-nav" class="main-nav">
+						<ul class="menu">
+							<li class="menu_item">
+								<a class="menu_link" href="#inicio">inicio</a>
+							</li>
+							<li class="menu_item">
+								<a class="menu_link" href="#seccionDos">Acerca de mi</a>
+							</li>
+							<li class="menu_item">
+								<a class="menu_link" href="#proyecto">Proyecto</a>
+							</li>
+							<li class="menu_item">
+								<a class="menu_link" href="#seccionTres">Habilidades</a>
+							</li>
+							<li class="menu_item">
+								<a class="menu_link" href="#contacto">Contacto</a>
+							</li>
+						</ul>
+						<div class="menu-bar">
+							<div class="uno"></div>
+							<div class="dos"></div>
+							<div class="tres"></div>
+						</div>
+					</nav>
+        			<div class="row">
 	  					<div class="col s12">
 	  						<ul class="texto-animado hidden">
-	  							<li class="name">M</li>
-	  							<li class="name">ó</li>
-	  							<li class="name">n</li>
-	  							<li class="name">i</li>
-	  							<li class="name">c</li>
-	  							<li class="name">a</li>
+	  							<li class="name flow-text">M</li>
+	  							<li class="name flow-text">ó</li>
+	  							<li class="name flow-text">n</li>
+	  							<li class="name flow-text">i</li>
+	  							<li class="name flow-text">c</li>
+	  							<li class="name flow-text">a</li>
 							</ul>
-							<h5 id="front" class="center flow-text">Font End Web Developer</h5>
+							<h5 id="front" class="center flow-text">Front End Web Developer</h5>
 							<hr id="hr-name">	
 						</div>
 					</div>
 				</div>
 			</header>
 			<section>
-				<div class="row"> 
-					<div class="col s12">
-                        <div class="contenido"><!--Acerca de mi-->
-	           				<div class="row">
-	           					<div class="col s4">
-	           						<img id="pic" class="circle responsive-img" src="img/pic.png" alt="">
-	           					</div>
-	           					<div class="col s8">
-	           						<h3 class="center">HOLA</h3>
-	           						<h5>Algo acerca de mi...</h5>
-	           						<p id="texto" class="text-justify"></p>
-	           				        <h6 id="frase"><i>Make things happen</i></h6>
-	           					</div>		
-	           				</div>
-						</div>
-					</div>
-				</div>
-             </section>
-			<section>
-				<div class="row">
-					<div class="col s12">
-                        <div class="section secDos">
+				<div  id="seccionDos" class=" secDos"><!--Acerca de mi-->
+	           		<div class="row">
+	           			<div class="col s4">
+	           				<img id="pic" class="circle responsive-img" src="img/pic.png" alt="">
 	           			</div>
-					</div>
+	           			<div class="col s8">
+	           				<div id="bg-white">
+	           				<h5 class="center">Algo acerca de mi...</h5>
+	           				<p class="center-align"> <img class="responsive-img" src="img/left-quote.png" alt=""> !Hola! Bienvenido a mi portafolio , mi nombre es Mónica y soy Desarrolladora Web Front End en Laboratoria.
+	           				<img class="responsive-img" src="img/right-quotation-sign.png" alt=""></p>
+	           				</div>
+	           				<h6 id="frase"><i>Make things happen</i></h6>
+	           			</div>		
+	           		</div>
 				</div>
-              </section>
-			<section>
+			</section>
+			<section id="proyecto">
 				<div class="row">
 					<div class="col s12">
 						<h4 class="center">Proyecto</h4>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col m6">
-                        <div class="contenido">
-	           				<div class="card">
-            					<div class="card-image">
-             						<a href="img/Proyecto1.PNG" data-lightbox="gallery" data-title="Keane Theme"><img class="proyecto img-responsive" src="img/Proyecto1.PNG"></a>
-            					</div>
-            					<div class="card-action">
-              						<a href="#">Proyecto 1</a>
-            					</div>
-          					</div>
-          				</div>
+					<div class="col s12 m6">
+                        <div class="ih-item square effect12 left_to_right"><a href="http://www.facebook.com">
+                            <div>
+                                <img src="img/Julliard.PNG" alt="img">
+                            </div>
+        					<div class="info">
+          					<h3>Escuela de Danza "Julliard"</h3>
+          					<p class="bold">Página Web utilizando enlaces internos y externos.</p>
+          					<button class="btn-ghost">Ver proyecto</button>
+        					</div></a>
+        				</div>
           			</div>
-          			<div class="col m6">
-                        <div class="contenido">
-	           				<div class="card">
-            					<div class="card-image">
-             						<a href="img/Julliard.PNG" data-lightbox="gallery" data-title="Keane Theme"><img class="proyecto img-responsive" src="img/Julliard.PNG"></a>
-            					</div>
-            					<div class="card-action">
-              						<a href="#">Proyecto 2</a>
-            					</div>
-          					</div>
-          				</div>
-          			</div>
-          			<div class="col m6">
-                        <div class="contenido">
-	           				<div class="card">
-            					<div class="card-image">
-             						<a href="img/comunidad.PNG" data-lightbox="gallery" data-title="Keane Theme"><img class="proyecto img-responsive" src="img/comunidad.PNG"></a>
-            					</div>
-            					<div class="card-action">
-              						<a href="#">Proyecto 3</a>
-            					</div>
-          					</div>
-          				</div>
-          			</div>
-          			<div class="col m6">
-                        <div class="contenido">
-	           				<div class="card">
-            					<div class="card-image">
-             						<a href="img/spring.PNG" data-lightbox="gallery" data-title="Keane Theme"><img class="proyecto img-responsive" src="img/spring.PNG"></a>
-            					</div>
-            					<div class="card-action">
-              						<a href="#">Proyecto 4</a>
-            					</div>
-          					</div>
-          				</div>
+          			<div class="col s12 m6">
+                        <div class="ih-item square effect12 left_to_right"><a href="http://www.facebook.com">
+                            <div>
+                                <img src="img/spring.PNG" alt="img">
+                            </div>
+        					<div class="info">
+          					<h3>Spring Came</h3>
+          					<p>Página web responsiva utilizando Boostrap.</p>
+          					<button class="btn-ghost">Ver proyecto</button>
+        					</div></a>
+        				</div>
           			</div>
           		</div>
-          	</div>
-            </section>
-            <section>
-            	<div class="row">
-            		<div class="col s4">
-            			 <div class="progress">
-      						<div class="determinate" style="width:50%"></div>
+          		<div class="row">
+					<div class="col s12 m6">
+                        <div class="ih-item square effect12 left_to_right"><a href="http://www.facebook.com">
+                            <div>
+                                <img id="img" src="img/comunidad.PNG" alt="img">
+                            </div>
+        					<div class="info">
+          					<h3>Comunidad Sostenible</h3>
+          					<p>Proyecto realizado con boostrap.</p>
+          					<button class="btn-ghost">Ver proyecto</button>
+        					</div></a>
+        				</div>
+          			</div>
+          			<div class="col s12 m6">
+                        <div class="ih-item square effect12 left_to_right"><a href="http://www.facebook.com">
+                            <div>
+                                <img src="img/Proyecto1.PNG" alt="img">
+                            </div>
+        					<div class="info">
+          					<h3>Keane Theme</h3>
+          					<p>Proyecto realizado con boostrap y animaciones.</p>
+          					<button class="btn-ghost">Ver proyecto</button>
+        					</div></a>
+        				</div>
+          			</div>
+          		</div>
+         	</section>
+         	<section>
+         		<div class="secTres" id="seccionTres">
+         		   <div class="row">
+         		   		<div class="col s12">
+         		   			<h5 class="text-white center"><span><</span>Habilidades Técnicas <span>></span></h5>
+         		   		</div>
+         		   </div>
+         		   <div class="row">
+         		   		<div class="col s6">
+         		   			<div class="skillbar clearfix " data-percent="75%">
+								<div class="skillbar-title"><span>Html/Css</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">Intermedio</div>
+							</div>
+							<div class="skillbar clearfix " data-percent="35%">
+								<div class="skillbar-title"><span>JavaScript</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">Básico</div>
+							</div>
+							<div class="skillbar clearfix " data-percent="50%">
+								<div class="skillbar-title"><span>Jquery</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">Básico</div>
+							</div>
   						</div>
-  						<p>Html</p>
-  					</div>
-  					<div class="col s4">
-            			 <div class="progress">
-      						<div class="determinate" style="width:50%"></div>
+  						<div class="col s6">
+         		   			<div class="skillbar clearfix " data-percent="50%">
+								<div class="skillbar-title"><span>Booststrap</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">Intermedio</div>
+							</div>
+							<div class="skillbar clearfix " data-percent="25%">
+								<div class="skillbar-title"><span>Materialize</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">Básico</div>
+							</div>
+							<div class="skillbar clearfix " data-percent="20%">
+								<div class="skillbar-title"><span>Github</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">Básico</div>
+							</div>
   						</div>
-  						<p>JavaScript</p>
-  					</div>
-  					<div class="col s4">
-            			 <div class="progress">
-      						<div class="determinate" style="width:50%"></div>
-  						</div>
-  						<p>Frameworks</p>
-  					</div>
-            	</div>
-            	<div class="row">
-            		<div class="col s4">
-            			 <div class="progress">
-      						<div class="determinate" style="width:50%"></div>
-  						</div>
-  						<p>Html</p>
-  					</div>
-  					<div class="col s4">
-            			 <div class="progress">
-      						<div class="determinate" style="width:50%"></div>
-  						</div>
-  						<p>JavaScript</p>
-  					</div>
-  					<div class="col s4">
-            			 <div class="progress">
-      						<div class="determinate" style="width:50%"></div>
-  						</div>
-  						<p>Frameworks</p>
-  					</div>
-            	</div>
-            </section>
-		<script type="text/javascript"  src="js/pace.min.js"></script>	
+         		   </div>
+         		   <div class="row">
+         		   		<div class="col s12">
+         		   			<h5 class="text-white center"><span><</span>Habilidades Blandas <span>></span></h5>
+         		   		</div>
+         		   </div>
+         		   <div class="row">
+         		   		<div class="col s6">
+         		   		    <div id="soft1">
+         		   			    <p class="text-white center">Capacidad de escucha</p>
+         		   			</div>
+         		   			<div id="soft2">
+         		   			    <p class="text-white center" id="soft2">Trabajo en Equipo</p>
+         		   			</div>
+         		   			<div id="soft3">
+         		   			    <p class="text-white center">Proactividad</p>
+         		   			</div>
+         		   		</div>
+						<div class="col s6">
+         		   		    <div id="soft1">
+         		   			    <p class="text-white center">Aprendizaje Continuo</p>
+         		   			</div>
+         		   			<div id="soft2">
+         		   			    <p class="text-white center" id="soft2">Responsabilidad</p>
+         		   			</div>
+         		   			<div id="soft3">
+         		   			    <p class="text-white center">Empatia</p>
+         		   			</div>
+         		   		</div>
+         		   </div>
+				</div>	
+			</section>
+			<footer id="contacto" class="page-footer">
+				<div class="row">
+					<div class="col s12">
+						<h3 class="center text-white">CONTACTAME</h3>
+					</div>
+				</div>
+			    <div class="row">
+					<div class="col s12">
+					    <div class="mg-left">
+						<a href=""><img class="mg-right" src="img/google-plus-logo-social-esbozado.png"></a>
+					 	<a href=""><img class="mg-right" src="img/logo-dibujado-de-linkedin.png"></a>
+					 	<a href=""><img class="mg-right" src="img/logo-dibujado-de-github-.png"></a>
+					 	</div>
+					 </div>
+				</div>
+	          	<div class="footer-copyright blue-grey">
+		            <div class="container">
+		            	<div class="row">
+		            		<div class="col s12">
+		            			<p class="text-white">© Derechos reservados | Laboratoria México.</p>
+		            		</div>
+				 		</div>
+		         	</div>
+	          	</div>
+        	</footer>
+		</div>	
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       	<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script type='text/javascript' src='js/main.js'></script>
-        <script type='text/javascript' src='js/lightbox.min.js'></script>
+		<script type='text/javascript' src='js/menu.js'></script>
     </body>
 </html>
