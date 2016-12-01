@@ -4845,7 +4845,7 @@ small {
 }
 
 .material-tooltip {
-  padding: 10px 8px;
+  padding: 7px 5px;
   font-size: 1rem;
   z-index: 2000;
   background-color: transparent;

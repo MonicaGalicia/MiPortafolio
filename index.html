@@ -4,9 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/ihover.css">
 		<link rel="stylesheet" href="css/materialize.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link rel="stylesheet" href="css/set2.css">
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<title>Portafolio</title>
@@ -15,41 +17,43 @@
 		<div class="container-fluid">
 			<header>
 				<div id="inicio" class="secUno">
-					<nav id="main-nav" class="main-nav">
-						<ul class="menu">
-							<li class="menu_item">
-								<a class="menu_link" href="#inicio">Inicio</a>
-							</li>
-							<li class="menu_item">
-								<a class="menu_link" href="#seccionDos">Sobre mi</a>
-							</li>
-							<li class="menu_item">
-								<a class="menu_link" href="#proyecto">Proyecto</a>
-							</li>
-							<li class="menu_item">
-								<a class="menu_link" href="#seccionTres">Habilidades</a>
-							</li>
-							<li class="menu_item">
-								<a class="menu_link" href="#contacto">Contacto</a>
-							</li>
-						</ul>
-						<div class="menu-bar">
-							<div class="uno"></div>
-							<div class="dos"></div>
-							<div class="tres"></div>
-						</div>
-					</nav>
+				    <div class="navbar-fixed">
+						<nav id="main-nav" class="main-nav">
+							<ul class="menu">
+								<li class="menu_item">
+									<a class="menu_link" href="#inicio">Inicio</a>
+								</li>
+								<li class="menu_item">
+									<a class="menu_link" href="#seccionDos">Sobre mi</a>
+								</li>
+								<li class="menu_item">
+									<a class="menu_link" href="#proyecto">Proyecto</a>
+								</li>
+								<li class="menu_item">
+									<a class="menu_link" href="#seccionTres">Habilidades</a>
+								</li>
+								<li class="menu_item">
+									<a class="menu_link" href="#contacto">Contacto</a>
+								</li>
+							</ul>
+							<div class="menu-bar">
+								<div class="uno"></div>
+								<div class="dos"></div>
+								<div class="tres"></div>
+							</div>
+						</nav>
+					</div>
         			<div class="row">
 	  					<div class="col s12">
 	  						<ul class="texto-animado hidden">
-	  							<li class="name flow-text">M</li>
-	  							<li class="name flow-text">ó</li>
-	  							<li class="name flow-text">n</li>
-	  							<li class="name flow-text">i</li>
-	  							<li class="name flow-text">c</li>
-	  							<li class="name flow-text">a</li>
+	  							<li id="m">M</li>
+	  							<li class="name">ó</li>
+	  							<li class="name">n</li>
+	  							<li class="name">i</li>
+	  							<li class="name">c</li>
+	  							<li class="name">a</li>
 							</ul>
-							<h5 id="front" class="center flow-text">Front End Web Developer</h5>
+							<h5 id="front" class="center">Front End Web Developer</h5>
 							<hr id="hr-name">	
 						</div>
 					</div>
@@ -58,185 +62,149 @@
 			<section>
 				<div  id="seccionDos" class=" secDos"><!--Acerca de mi-->
 	           		<div class="row">
-	           			<div class="col s6">
+	           			<div class="col s12 m6">
 	           				<img id="pic" class="circle responsive-img" src="img/pic.png" alt="">
 	           			</div>
-	           			<div class="col s6">
-	           				<div id="bg-white">
-	           				<h3 class="center text-white titulos">Hola!</h3>
-	           				<p class="center-align descripcion"> <img class="responsive-img" src="img/left-quote.png" alt="">Soy Mónica, Desarrolladora Web Front End.Veo la tecnologia como un mundo lleno de posiblidades a través del cual podemos generar un impacto social positivo.
-	           				<img class="responsive-img" src="img/right-quotation-sign.png" alt=""></p>
-	           				<a href="docs/Mónica Galicia (10).pdf" target="_blank"><button class="btn-ghost cv hide-on-small-only">Descarga mi CV</button></a>
-	           				</div>
-	           				<h6 id="frase"></h6>
-	           			</div>		
+	           			<div class="col s12 m6">
+	           				<h3 class="center titulos top">Hola!</h3>
+	           				<p class="center-align descripcion white-text">Soy Mónica, Desarrolladora Web Front End.Veo la tecnologia como un mundo lleno de posiblidades a través del cual podemos generar un impacto social positivo.</p>
+	           				<a href="docs/Mónica Galicia.pdf" target="_blank"><button class=" cv hide-on-small-only white-text">Ve mi CV</button></a>
+	           			</div>
 	           		</div>
 				</div>
 			</section>
-			<section id="proyecto">
+			<section id="proyecto" class="bg-proyecto">
 				<div class="row">
 					<div class="col s12">
 						<h4 class="center">Proyecto</h4>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col s12 m6">
-                        <div class="ih-item square effect12 left_to_right"><a href="docs/Juilliard/index.html" target="_blank">
-                            <div>
-                                <img src="img/Julliard.PNG" alt="img">
-                            </div>
-        					<div class="info">
-          					<h3>Escuela de Danza "Julliard"</h3>
-          					<p class="bold">Página Web utilizando enlaces internos y externos.</p>
-          					<button class="btn-ghost">Ver proyecto</button>
-        					</div></a>
-        				</div>
-          			</div>
-          			<div class="col s12 m6">
-                        <div class="ih-item square effect12 left_to_right"><a href="docs/Boostrap/index.html" target="_blank">
-                            <div>
-                                <img src="img/spring.PNG" alt="img">
-                            </div>
-        					<div class="info">
-          					<h3>Spring Came</h3>
-          					<p>Página web responsiva utilizando Boostrap.</p>
-          					<button class="btn-ghost">Ver proyecto</button>
-        					</div></a>
-        				</div>
-          			</div>
-          		</div>
-          		<div class="row">
-					<div class="col s12 m6">
-                        <div class="ih-item square effect12 left_to_right"><a href="docs/comunidadSostenible/index.html" target="_blank">
-                            <div>
-                                <img src="img/comunidad.PNG" alt="img">
-                            </div>
-        					<div class="info">
-          					<h3>Comunidad Sostenible</h3>
-          					<p class="bold">Proyecto realizado con boostrap.</p>
-          					<button class="btn-ghost">Ver proyecto</button>
-        					</div></a>
-        				</div>
-          			</div>
-          			<div class="col s12 m6">
-                        <div class="ih-item square effect12 left_to_right"><a href="docs/KaneTheme/index.html" target="_blank">
-                            <div>
-                                <img src="img/Proyecto1.PNG" alt="img">
-                            </div>
-        					<div class="info">
-          					<h3>Kane Theme</h3>
-          					<p>Proyecto con animaciones</p>
-          					<button class="btn-ghost">Ver proyecto</button>
-        					</div></a>
-        				</div>
+					<div class="col s12">
+						<div class="grid">
+                            <figure class="effect-jazz">
+								<img src="img/spring.PNG" alt="img25"/>
+								<figcaption>
+									
+									<p><button class="btn-ghost">Ver Proyecto</button></p>
+									<a href="docs/Boostrap /index.html">View more</a>
+								</figcaption>			
+							</figure>
+                            <figure class="effect-jazz">
+                                <img class="img-proyecto" src="img/Julliard.PNG" alt="img"/>
+                                <figcaption>
+                                    <a href="docs/Juilliard /index.html" target="_blank">
+                                        <p>hola</p>
+                                    </a>  
+                                </figcaption>			
+                            </figure>
+                            <figure class="effect-jazz">
+                                <img class="img-proyecto" src="img/comunidad.PNG" alt="img"/>
+                                <figcaption>
+                                    <a href="docs/ComunidadSostenible/index.html" target="_blank">
+                                        <button></button>
+                                    </a>  
+                                </figcaption>			
+                            </figure>
+                            <figure class="effect-jazz">
+                                <img class="img-proyecto" src="img/Proyecto1.PNG" alt="img"/>
+                                <figcaption>
+                                    <a href="docs/KaneTheme/index.html" target="_blank">
+                                        <button></button>
+                                    </a>  
+                                </figcaption>			
+                            </figure>
+                        </div>
           			</div>
           		</div>
-         	</section>
+          	</section>
          	<section>
-         		<div class="secTres" id="seccionTres">
-         		   <div class="row">
-         		   		<div class="col s12 m6">
-         		   			<h5 class="text-white center top"><img src="img/corchete-izquierdo.png" alt="">Habilidades Técnicas <img src="img/reproducir-simbolo (2).png" alt=""></h5>
-         		   			<div class="skillbar clearfix " data-percent="75%">
-								<div class="skillbar-title"><span>Html/Css</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">Intermedio</div>
-							</div>
-							<div class="skillbar clearfix " data-percent="35%">
-								<div class="skillbar-title"><span>JavaScript</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">Básico</div>
-							</div>
-							<div class="skillbar clearfix " data-percent="50%">
-								<div class="skillbar-title"><span>Jquery</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">Básico</div>
-							</div>
-							<div class="skillbar clearfix " data-percent="50%">
-								<div class="skillbar-title"><span>Booststrap</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">Intermedio</div>
-							</div>
-							<div class="skillbar clearfix " data-percent="25%">
-								<div class="skillbar-title"><span>Materialize</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">Básico</div>
-							</div>
-							<div class="skillbar clearfix " data-percent="20%">
-								<div class="skillbar-title"><span>Github</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">Básico</div>
-							</div>
-  						</div>
-  						<div class="col s12 m6">
-  							<h5 class="text-white center top"><img src="img/corchete-izquierdo.png" alt="">Habilidades Blandas <img src="img/reproducir-simbolo (2).png" alt=""></h5>
-         		   			<div class="skillbar clearfix " data-percent="90%">
-								<div class="skillbar-title"><span>Capacidad de escucha</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">Avanzado</div>
-							</div>
-							<div class="skillbar clearfix " data-percent="90%">
-								<div class="skillbar-title"><span>Trabajo en equipo</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">Avanzado</div>
-							</div>
-							<div class="skillbar clearfix " data-percent="90%">
-								<div class="skillbar-title"><span>Proactividad</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">Avanzado</div>
-							</div>
-							<div class="skillbar clearfix " data-percent="90%">
-								<div class="skillbar-title"><span>Aprendizaje continuo</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">Avanzado</div>
-							</div>
-							<div class="skillbar clearfix " data-percent="90%">
-								<div class="skillbar-title"><span>Responsabilidad</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">Avanzado</div>
-							</div>
-							<div class="skillbar clearfix " data-percent="90%">
-								<div class="skillbar-title"><span>Empatia</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">Avanzado</div>
-							</div>
-  						</div>
+         		<div id="seccionTres" class="secTres">
+         		   <div class="container">
+	         		   <div class="row">
+	         		   		<div class="col s12 m6">
+	         		   			<h5 class="white-text tecnicas top margin-bottom"><img src="img/corchete-izquierdo.png" alt="">Habilidades Técnicas <img src="img/reproducir-simbolo (2).png" alt=""></h5>
+	         		   			<p class="inline responsivebar">Html/Css </p><p class="small inline"> Intermedio</p>
+	         		   			<div class="skillbar clearfix " data-percent="50%">
+									<div class="skillbar-bar"></div>
+								</div>
+								<p class="inline responsivebar">Javascript </p><p class="small inline"> Básico</p>
+	         		   			<div class="skillbar clearfix " data-percent="25%">
+									<div class="skillbar-bar"></div>
+								</div>
+								<p class="inline responsivebar">JQuery </p><p class="small inline"> Básico</p>
+	         		   			<div class="skillbar clearfix " data-percent="25%">
+									<div class="skillbar-bar"></div>
+								</div>
+								<p class="inline responsivebar">Bootstrap </p><p class="small inline"> Intermedio</p>
+	         		   			<div class="skillbar clearfix " data-percent="50%">
+									<div class="skillbar-bar"></div>
+								</div>
+								<p class="inline responsivebar">Github </p><p class="small inline"> Intermedio</p>
+	         		   			<div class="skillbar clearfix " data-percent="50%">
+									<div class="skillbar-bar"></div>
+								</div>
+								<p class="inline responsivebar">Materialize</p><p class="small inline"> Básico</p>
+	         		   			<div class="skillbar clearfix " data-percent="25%">
+									<div class="skillbar-bar"></div>
+								</div>
+	  						</div>
+	  						<div class="col s12 m6">
+	  							<h5 class="white-text center margin-bottom top"><img src="img/corchete-izquierdo.png" alt="">Habilidades Blandas <img src="img/reproducir-simbolo (2).png" alt=""></h5>
+	         		   			<p class="left white-text"><img src="img/ear.png">Capacidad de escucha.</p>
+	         		   			
+								<p class="left white-text"><img src="img/lecture (3).png"> Trabajo en equipo.</p> 
+	         		   			
+								<p class="left white-text"><img src="img/connection.png"> Comunicación Asertiva.</p>
+	         		   			
+								<p class="left white-text"><img src="img/browser.png"> Aprendizaje Continuo.</p>
+	         		   			
+								<p class="left white-text"><img src="img/charity (1).png"> Empatia.</p>
+								
+	  						</div>
+	         		   </div>
          		   </div>
 				</div>	
 			</section>
-			<footer id="contacto" class="bg-footer">
-				<div class="row">
-					<div class="col s12">
-						<h3 class="center text-white titulos">CONTACTAME</h3>
+			<footer id="contacto" class="width-section">
+				<div class="container">
+					<div class="row">
+						<div class="col s12 top2">	
+			     			<h4 class="center" id="frase"><img class="responsive-img" src="img/quotes (1).png" alt=""> Sólo aquellos que se atreven a tener grandes fracasos terminan consiguiendo grandes éxitos <img class="responsive-img" src="img/text-quotes-.png" alt=""></h4><p id="sub-frase" class="right-align">Robert F. Kennedy</p>
+			     		</div>
+			     	</div>
+			     </div>
+				<div class="bg-footer">
+					<div class="row">
+						<div class="col s12">
+							<h3 class="center white-text">CONTACTAME</h3>
+						</div>
 					</div>
-				</div>
-			    <div class="row">
-					<div class="col s3">
-					    <a href=""><img class="mg-auto" src="img/logo-viber-variante-esbozado.png"></a>
-					    <p class="center text-white">5525607375</p>
+				    <div class="row">
+						<div class="col s3">
+						    <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="monica.garmz@gmail.com" href=""><img class="mg-auto iconos img-responsive" src="img/google-plus-draw-logo (4).png"></a>
+						</div>
+						 <div class="col s3">
+						 	<a href=""><img class="mg-auto iconos img-responsive" src="img/linkedin-draw-logo.png"></a>
+						 </div>
+						<div class="col s3">
+							<a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="+5525607375" href=""><img class="mg-auto iconos img-responsive" src="img/viber-logo-sketched-variant.png"></a>
+	    				</div>
+						<div class="col s3">
+							<a href="https://github.com/MonicaGalicia" target="_blank"><img class="mg-auto iconos img-responsive" src="img/github-draw-logo.png"></a>
+						</div>
 					</div>
-					 <div class="col s3">
-					 	<a href=""><img class="mg-auto" src="img/logo-dibujado-de-linkedin.png"></a>
-					 </div>
-					<div class="col s3">
-						<a href=""><img class="mg-auto" src="img/google-plus-logo-social-esbozado.png"></a>
-					</div>
-					<div class="col s3">
-						<a href=""><img class="mg-auto" src="img/logo-dibujado-de-github-.png"></a>
-						
-					</div>
-				</div>
-	          	<div class="bg-derechos">
-		            <div class="container">
-		            	<div class="row">
+					<div class="bg-derechos">
+		          		<div class="row">
 		            		<div class="col s12">
-		            			<p class="text-white">© Derechos reservados | Laboratoria México.</p>
+		            			<p class="white-text">© Derechos reservados | Laboratoria México.</p>
 		            		</div>
 				 		</div>
 		         	</div>
-	          	</div>
+				</div>
         	</footer>
-		</div>	
+		</div>
+  		</div>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       	<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script type='text/javascript' src='js/main.js'></script>
