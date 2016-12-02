@@ -97,10 +97,6 @@ nav{
 	    color:#F95759;
 }
 
-.top{
-	margin-top:23%;
-
-}
 
 .descripcion{
 	font-weight:bold;
@@ -157,6 +153,7 @@ background: rgba(0,0,0,0);
 .secTres{
 	background-color:#2e3336;
 	height:672px;
+ 
 }
 
 .inline{
@@ -495,10 +492,12 @@ h4{
 	
 }
 
-.none{
-		color:transparent !important;
-	}
-	
+
+.top{
+	margin-top:30% !important;
+
+}
+
 
 
 
